@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ręcznie robione bombki – Sklep</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>Złota Kolekcja Bombek – Sklep Anetki</header>
+<nav>
+ <a href="#produkty">Produkty</a>
+ <a href="#oAutorce">O autorce</a>
+ <a href="#" id="openCart">Koszyk</a>
+</nav>
+
+<div id="cartPanel">
+ <h2>Twój koszyk</h2>
+ <div id="cartItems"></div>
+ <div class="checkout">
+  <label>Forma dostawy:</label>
+  <select id="shipping">
+    <option value="10">Paczkomat InPost – 10 zł</option>
+    <option value="20">Kurier – 20 zł</option>
+  </select>
+  <h3>Razem: <span id="total">0.00</span> zł</h3>
+  <button class="btnSmall">Kup jako gość</button>
+  <button id="closeCart" class="btnSmall" style="background:#444; color:white; margin-top:10px;">Zamknij</button>
+ </div>
+</div>
+
+<section id="produkty" class="wrap">
+ <div class="product">
+   <img src="img/1000002484.jpg" class="c1"/>
+   <h3>Bombka 10cm – 50zł</h3>
+   <button class="buy" onclick="addToCart('Bombka mała 10cm', 50)">Dodaj do koszyka</button>
+ </div>
+ <div class="product">
+   <img src="img/1000002485.jpg" class="c2" />
+   <h3>Bombka 12cm – 70zł</h3>
+   <button class="buy" onclick="addToCart('Bombka średnia 12cm', 70)">Dodaj do koszyka</button>
+ </div>
+ <div class="product">
+   <img src="img/1000002486.jpg" class="c3"/>
+   <h3>Bombka 15cm – 100zł</h3>
+   <button class="buy" onclick="addToCart('Bombka duża 15cm', 100)">Dodaj do koszyka</button>
+ </div>
+</section>
+
+<section id="oAutorce" style="padding:30px; background:#1a1a1a; border-top:1px solid gold;">
+ <h2>Poznaj Anetę – twórczynię magicznych bombek</h2>
+ <p>
+     Anetka od lat tworzy ręcznie zdobione bombki, wkładając w każdą z nich 
+     <strong>całe serce i wyjątkową dbałość o detale</strong>. 
+     Uwielbia moment, w którym zwykła kula zamienia się w małe 
+     dzieło sztuki.
+ </p>
+ <p>
+     Jej bombki powstają powoli, z sercem i spokojem, bo wierzy, że tylko wtedy 
+     mogą naprawdę <em>rozświetlić czyjeś święta</em>.  
+     Każda z nich jest unikatowa.
+ </p>
+ <p>
+     <strong>Może właśnie Ty znajdziesz tu swoją wyjątkową bombkę?</strong> 🎄✨
+ </p>
+</section>
+
+<footer>Projekt i realizacja: <strong>Created by PZWeb</strong> &copy; 2025</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
