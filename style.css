@@ -70,7 +70,6 @@ header {
   }
  .btnSmall { 
 	padding:10px;
-	margin-bottom:30px;
 	width:100%; 
 	background:gold; 
 	border:none; 
@@ -91,6 +90,7 @@ header {
         height: auto !important}
  .c3 { width: 380px !important;
 	height: auto !important}
+
 
 
 
